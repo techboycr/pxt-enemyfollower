@@ -11,6 +11,8 @@ namespace follower {
     export function follow(Hero: Sprite, Villain: Sprite, vSpeed: number) {
         if (Hero.x > Villain.x) {
             Villain.vx = vSpeed
+
+            game.splash("Hero.x")
         } else {
             Villain.vx = -1 * vSpeed
         }
