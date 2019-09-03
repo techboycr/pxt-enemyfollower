@@ -12,8 +12,6 @@ namespace follower {
         loops.forever(function () {
             if (Hero.x > Villain.x) {
                 Villain.vx = vSpeed
-
-                game.splash("Hero.x")
             } else {
                 Villain.vx = -1 * vSpeed
             }
