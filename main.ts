@@ -8,7 +8,7 @@ namespace follower {
      * This is a statement block with a parameter
      */
     //% block
-    export function move(Hero: any, Villain: any, vSpeed: number) {
+    export function follow(Hero: Sprite, Villain: Sprite, vSpeed: number) {
         if (Hero.x > Villain.x) {
             Villain.vx = vSpeed
         } else {
