@@ -7,7 +7,7 @@ namespace follower {
     /**
      * This is a statement block with a parameter
      */
-    //% block
+    //% block="follower Sprite = $Hero will follow = $Villain" at a speed of =$vSpeed
     export function follower(Hero: Sprite, Villain: Sprite, vSpeed: number) {
         loops.forever(function () {
             if (Hero.x > Villain.x) {
@@ -21,14 +21,6 @@ namespace follower {
                 Villain.vy = -1 * vSpeed
             }
         })
-    }
-
-    /**
-     * This is an event handler block
-     */
-    //% block="on event"
-    export function onEvent(handler: () => void) {
-
     }
 }
  
