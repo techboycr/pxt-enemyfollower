@@ -2,7 +2,7 @@
 // Created by Abraham Pineda Zelaya
 // Blue Valley Tech Department
 
-//% color="#4C97FF" weight=100 icon="\uf1ec" block="Basic Blocks"
+//% color="#4C97FF" weight=100 icon="\f1e6" block="BVS Blocks"
 namespace Blue_Valley {
 
     /**
@@ -12,11 +12,11 @@ namespace Blue_Valley {
     //% block="Follow - Sprite $Villain=variables_get(mySprite)| will follow $Hero=variables_get(mySprite2) | at a speed of  %vSpeed"
     export function follow(Hero: any, Villain: any, vSpeed: number) {
         loops.forever(function () {
-            if (Hero.x == Villain.x && Hero.y == Villain.y){
+            if (Hero.x == Villain.x && Hero.y == Villain.y) {
                 Villain.vx = 0
                 Villain.vy = 0
             }
-            else{
+            else {
                 if (Hero.x > Villain.x) {
                     Villain.vx = vSpeed
                 } else {
