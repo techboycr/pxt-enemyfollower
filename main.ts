@@ -7,8 +7,8 @@ namespace follower {
     /**
      * This is a statement block with a parameter
      */
-    //% vSpeed.defl = 5
-    //% block="Sprite %Hero=variables_get(mySprite)| will follow %Villain=variables_get(mySprite2) | at a speed of  $vSpeed"
+    //% vSpeed.defl=5
+    //% block="Sprite %Hero=variables_get(mySprite)| will follow %Villain=variables_get(mySprite2) | at a speed of  %vSpeed"
     export function follow(Hero: any, Villain: any, vSpeed: number) {
         loops.forever(function () {
             if (Hero.x > Villain.x) {
