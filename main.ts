@@ -7,7 +7,7 @@ namespace follower {
     /**
      * This is a statement block with a parameter
      */
-    //% block="follower"
+    //% block
     export function follower(Hero: Sprite, Villain: Sprite, vSpeed: number) {
         loops.forever(function () {
             if (Hero.x > Villain.x) {
@@ -23,4 +23,3 @@ namespace follower {
         })
     }
 }
- 
