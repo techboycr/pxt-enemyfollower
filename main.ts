@@ -10,7 +10,6 @@ namespace follower {
     //% vSpeed = 5
     //% block="Spriterr $Hero will follow $Villain at a speed of  $vSpeed"
     //% blockSetVariable=Hero
-    //% blockSetVariable=gizmo
     export function follow(Hero: any, Villain: any, vSpeed: number) {
         loops.forever(function () {
             if (Hero.x > Villain.x) {
