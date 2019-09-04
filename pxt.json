@@ -1,5 +1,5 @@
 {
-    "name": "pxt-enemyfollower",
+    "name": "pxt-follower",
     "version": "0.0.3",
     "description": "",
     "dependencies": {
