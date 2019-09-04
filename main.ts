@@ -2,8 +2,8 @@
 // Created by Abraham Pineda Zelaya
 // Blue Valley Tech Department
 
-//% color="#4C97FF"
-namespace follower {
+//% color="#4C97FF" weight=100 icon="\uf1ec" block="Basic Blocks"
+namespace Blue_Valley {
 
     /**
      * This is a statement block with a parameter
