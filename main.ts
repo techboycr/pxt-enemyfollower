@@ -2,7 +2,7 @@
 // Created by Abraham Pineda Zelaya
 // Blue Valley Tech Department
 
-//% color="#4C97FF" weight=100 icon="\f2dd" block="BVS Blocks"
+//% color="#4C97FF" weight=100 icon="\uf2dd" block="BVS Blocks"
 namespace Blue_Valley {
 
     /**
