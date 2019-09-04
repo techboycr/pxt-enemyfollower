@@ -11,15 +11,21 @@ namespace follower {
     //% block="Sprite %Hero=variables_get(mySprite)| will follow %Villain=variables_get(mySprite2) | at a speed of  %vSpeed"
     export function follow(Hero: any, Villain: any, vSpeed: number) {
         loops.forever(function () {
-            if (Hero.x > Villain.x) {
-                Villain.vx = vSpeed
-            } else {
-                Villain.vx = -1 * vSpeed
+            if (Hero.x == Villain.x && Hero.y == Villain.y){
+                Villain.vx = 0
+                Villain.vy = 0
             }
-            if (Hero.y > Villain.y) {
-                Villain.vy = vSpeed
-            } else {
-                Villain.vy = -1 * vSpeed
+            else{
+                if (Hero.x > Villain.x) {
+                    Villain.vx = vSpeed
+                } else {
+                    Villain.vx = -1 * vSpeed
+                }
+                if (Hero.y > Villain.y) {
+                    Villain.vy = vSpeed
+                } else {
+                    Villain.vy = -1 * vSpeed
+                }
             }
         })
     }
